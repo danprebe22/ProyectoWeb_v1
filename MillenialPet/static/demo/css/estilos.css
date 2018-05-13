@@ -1,0 +1,64 @@
+p {
+	text-align: justify;
+	font-family: 'Abel', sans-serif;
+}
+
+p.tam-aviso {
+	font-size: 85%;
+}
+
+p.tam-foot {
+	font-size: 95%;
+}
+
+a.proy-style{
+	font-family: 'Abel', sans-serif;
+}
+
+h5.text-pcolor {
+	color: #00838f;
+}
+
+h5 {
+	font-family: 'Abel', sans-serif;
+}
+
+font.text-pcolor {
+	color: #00838f;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #F6F4F1;
+}
+
+main {
+	flex: 1 0 auto;
+	text-align: center;
+}
+
+nav ul li a{
+	color: #00838f;
+}
+
+nav {
+	background: white;
+}
+
+i.icon-blue {
+    color: #00838f;
+}
+
+span.proy-format{
+	font-size: 105%;
+	font-family: 'Abel', sans-serif;
+	color: #00838f;
+}
+
+div.question-style{
+	font-size: 105%;
+	font-family: 'Abel', sans-serif;
+}
+

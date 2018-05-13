@@ -1,0 +1,12 @@
+{% block content %}
+        <!--Se linkea con citas-->
+        <h1>{{ user }}</h1>
+        {% for cita in citas%}
+        <div>
+            <h2>Citas</h2>
+            <div>Fecha: {{ cita.hora_inicio }} </div>
+            <div>Paquete: {{ cita.num_paquete }}</div>
+            <button type="submit" value="Cancelar">Cancelar</button>
+        </div>
+        {% endfor %}
+{% endblock %}

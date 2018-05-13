@@ -1,0 +1,58 @@
+html, body, h1, h2, p, a, header, footer, .container, .is-footer  {
+  margin: 0;
+  padding: 0;
+}
+body {
+ /* font: normal 22px/26px "Open Sans Condensed", sans-serif; */
+  
+  background-attachment: fixed;
+  background-size: cover;
+  
+color: white;
+font-family: 'Jockey One', sans-serif;
+
+
+}
+
+#body1{
+background-color: #00BFFF;
+
+
+}
+
+h1 {
+  color: rgba(255, 255, 255, 1);
+}
+h5 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+p {
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 90%;
+  margin: 30px auto 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+.navbar-fixed{
+  font-family: 'Montserrat', sans-serif;  
+  background-color: rgba(0,0,0,0);
+
+}
+
+.vision{
+
+  font-family: 'Quicksand', sans-serif;
+}

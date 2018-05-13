@@ -1,0 +1,224 @@
+{%  load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Millennial Pet</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- LINKEOS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href={% static 'img/logo2.png' %} />
+  <link rel="stylesheet" href={% static 'css/styleIndex.css' %}>
+  <link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
+  <link rel="stylesheet" href={% static 'css/buttons.css' %}>
+  <link rel="stylesheet" href={% static 'css/materialize.min.css' %}>
+
+  
+  <!-- TERMINAN LINKEOS -->
+</head>
+
+<body>
+
+
+  <!-- COMIENZO DEL NAV -->
+<a name="arriba"></a>
+<div class="navbar-fixed">
+<nav>
+    <div id="site-header" class="nav-wrapper black">
+      <a href="{% url 'index' %}" class="brand-logo center"><img src={% static 'img/logo240.png' %}></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="{% url 'packs' %}">Paquetes</a></li>
+        <li><a href="{% url 'productos' %}">Productos</a></li>
+        <li><a href="{% url 'promociones' %}">Promociones</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{% url 'unete' %}">Únete</a></li>
+        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+        <li><a href="{% url 'acercade' %}">¿Quiénes somos?</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</div>
+<!-- TERMINA NAV -->
+<!-- COMIENZA SIDENAV -->
+  <ul class="sidenav blue-darken" id="mobile-demo">
+    <li><div class="user-view">
+      <div class="background">
+        <img class="responsive-img" src="{% static 'img/bulldog3.jpg' %}">
+      </div>
+      <a href="#user"><img class="circle" src={% static 'img/logo1.png' %}></a>
+      <a href="#name"><span class="white-text name">Millennial Pet</span></a>
+      <a href="#email"><span class="white-text email">Sonríe más, ladra menos</span></a>
+    </div></li>
+
+     <li><a href="{% url 'index' %}"><i class="material-icons">home</i>Home</a></li>
+     <li><a href="{% url 'packs' %}"><i class="material-icons">card_travel</i>Paquetes</a></li>
+     <li><a href="{% url 'productos' %}"><i class="material-icons">dialpad</i>Productos</a></li>
+     <li><a href="{% url 'promociones' %}"><i class="material-icons">attach_money</i>Promociones</a></li>
+     <li><a href="{% url 'contacto' %}"><i class="material-icons">call</i>Contacto</a></li>
+
+    <li><div class="divider"></div></li>
+    <li><a class="subheader"><i class="material-icons">person</i> Cuenta</a></li>
+    <li><a class="waves-effect" href="{% url 'iniciarSesión'%}"><i class="material-icons">subdirectory_arrow_right</i> Iniciar sesión</a></li>
+    <li><a class="waves-effect" href="{% url 'registrarse' %}"><i class="material-icons">person_add</i> Registrarse</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="{% url 'acercade' %}"><i class="material-icons"></i>Acerca de nosotros</a></li>
+
+  </ul>
+<!-- TERMINA SIDENAV -->
+
+  
+
+<!-- COMIENZO DEL MAIN -->
+<main>
+    
+    <div class="parallax-container">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="parallax"><img src={% static 'img/perrolago.jpg' %}></div>
+      <h4 class="right">Dijeron que iba a salir en la foto... Jummm!</h4>
+    </div>
+
+    <div class="row">
+    <div class="col s12 m6" class="vision">
+      <div class="card black darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Misión</span>
+          <p>a) Ser una empresa comercializadora de calidad y confianza para los clientes.</p>
+          <p>b) Fomentar las relaciones con albergues de manera que las adopciones sean una parte de nuestra cultura como empresa.</p>
+          <p>c) Brindar un servicio integral a la atención de la mascota, mejorando la calidad de la relación dueño-animal.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.nytimes.com/es/2017/05/13/alpinismo-k2-invierno/">Artículo completo</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col s12 m6" class="vision">
+      <div class="card black darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Visión</span>
+          <p>a) Convertirnos en la empresa número uno reconocida en el sector comercial en un lapso de 10 años.</p>
+          <p>b) Ser reconocidos como la empresa con el mejor servicio web para conexión entre dueños de mascotas.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.nytimes.com/es/2017/05/13/alpinismo-k2-invierno/">Artículo completo</a>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+    <div class="section black">
+      <div class="row container">
+        <h2 class="header">Nuestro equipo de trabajo</h2>
+        <p class="grey-text text-darken-3 lighten-3">Estamos enfocados en tu bienestar y en el de tu mascota, así llueva, truene o relampaguee.</p>
+         
+        
+      </div>
+    </div>
+
+    <div class="carousel carousel-slider">
+          <a class="carousel-item" href="#one!"><img src={% static 'img/studiopet.jpg' %} class="img-responsive"><h1>Hola</h1></a>
+          <a class="carousel-item" href="#two!"><img src={% static 'img/estudiomorra.jpg' %} class="img-responsive"></a>
+          <a class="carousel-item" href="#three!"><img src={% static 'img/3.jpg' %} class="img-responsive"></a>
+          <a class="carousel-item" href="#four!"><img src={% static 'img/morras.jpg' %} class="img-responsive"></a>
+          <a class="carousel-item" href="#five!"><img src={% static 'img/bulldogstudio.jpg' %} class="img-responsive"></a>
+        </div>
+    <div >
+      <h1 class="black-text center">Preguntas frecuentes FAQ's</h1>
+    </div>
+
+     <ul class="collapsible black">
+    <li>
+      <div class="collapsible-header black"><i class="material-icons">question_answer</i>¿Cómo es una sesión?</div>
+      <div class="collapsible-body"><p>1. Agendas tu cita</p><p>2. Diseñas tu sesión</p><p>3. Te tomas las fotos</p><p>4. Escoges tus fotos</p><br><h5>Así de simple</h5><br></div>
+    </li>
+    <li>
+      <div class="collapsible-header black"><i class="material-icons">question_answer</i>
+¿Mi perrito está viejito o es nervioso, ¿ustedes pueden realizar sesión fotográfica con él?</div>
+      <div class="collapsible-body"><p>Por su puesto, nuestro estudio se especializa en retrato de mascotas y sus dueños. La fotógrafa Iva Koukalova tiene más de 8 años de experiencia en manejo de animales rescatados, cuenta con conocimientos en etología y entrenamiento. La comodidad, seguridad y el bien estar de la mascota es nuestra prioridad. Sabemos que cada uno es diferente y toda la sesión gira alrededor de sus necesidades únicas.</p> <br>
+      <p>Paciencia, juegos, comunicación, apapachos, galletas y tiempo de sobra son lo que nuestro equipo en Foto De Tu Mascota utiliza para consentir a los clientes de 4 patitas obteniendo imágenes maravillosas de tu perrito. Nuestros clientes siempre se sorprenden lo bien que se portan su animalitos.</p>
+      
+      </div>
+      </li>
+    <li>
+      <div class="collapsible-header black"><i class="material-icons">question_answer</i>¿Hay que pagar algún anticipo?</div>
+
+      <div class="collapsible-body"><span>Para reservar tu fecha se requiere el 15% de anticipo. En caso de las tarjetas, es el 100% y tienen una validez de 4 meses.</span></div>
+    </li>
+
+    <li>
+      <div class="collapsible-header black"><i class="material-icons">question_answer</i>¿Cuál es el precio la sesión?</div>
+      <div class="collapsible-body"><span>Toda la información de los precios y servicios, la puedes consultar <a href="packs.html">AQUÍ</a></span> <br>
+      </div>
+      </li>
+    
+  </ul>
+
+
+</main>
+
+
+</body>
+
+<!-- SCRIPTS -->
+<script src={% static 'js/jquery-index.js' %}></script>
+<script src={% static 'js/materialize-index.min.js' %}></script>
+<script type="text/javascript" src={% static 'js/app-promos.js' %}></script>
+<script src={% static 'js/styleTienda.css' %}></script>
+
+
+<!-- COMIENZA FOOTER -->  
+  <footer class="page-footer  black"  id="myFooter" >
+
+   <div class="row">
+    <center>
+      <div class="col s12">¡SÍGUENOS EN NUESTRAS REDES SOCIALES!</div>
+      <div class="col s4"></div>
+
+      <div class="row">
+        <div class="col s3"></div>
+
+        <div class="col s12">
+          <center>
+            <br>
+            <br>
+            <span><a href="#arriba" title="Ir arriba"><img src={% static 'img/up.png' %} border="0" width="70" height="70"  href="#abajo" title="Ir arriba"></a></span>
+            <br>
+            <a href="https://www.instagram.com/tiendasoxxo/"><img src={% static 'img/icon8/instagram.png' %}/></a>
+            <a href="https://twitter.com/Tiendas_OXXO"><img src={% static 'img/icon8/twitter.png' %}/></a>
+            <a href="https://www.youtube.com/user/tiendaoxxo"><img src={% static 'img/icon8/youtube.png' %}/></a>
+            <a href="https://www.oxxo.com/"><img src={% static 'img/icon8/github-circle.png' %}/></a>
+            <a href="https://www.facebook.com/OXXOTiendas"><img src={% static 'img/icon8/facebook.png' %}/></a>
+
+          </center>
+        </div>
+        <div class="col s3"></div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col s3"></div>
+        <div class="col s3"><br>Todos los derechos reservados</div>
+        <div class="col s3"><br>Millennial Pet S.A de C.V</div>
+        <div class="col s3"></div>
+      </div>
+
+
+      <div class="footer-copyright">
+        <div class="col s12">
+          © 2018 Copyright 
+        </div>
+      </div>
+      <br>
+    </footer>
+<!-- TERMINA FOOTER -->
+</html>

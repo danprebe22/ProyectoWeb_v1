@@ -1,0 +1,116 @@
+{%  load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Millennial Pet</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- LINKEOS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href={% static 'img/logo2.png' %} />
+  <link rel="stylesheet" href={% static 'css/styleIndex.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
+  <link rel="stylesheet" href={% static 'css/materialize.min.css' %}>
+
+  
+  <!-- TERMINAN LINKEOS -->
+</head>
+
+<body>
+
+  <!-- COMIENZO DEL NAV -->
+<a name="arriba"></a>
+<div class="navbar-fixed"> 
+<nav>
+    <div id="site-header" class="nav-wrapper black">
+      <a href="index.html" class="brand-logo center"><img src={% static 'img/logo240.png' %}></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="packs.html">Paquetes</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="registro-Login.html">Únete</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="acercade.html">¿Quiénes somos?</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</div>
+<!-- TERMINA NAV -->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- SCRIPTS -->
+<script src={% static 'js/jquery-index.js' %}></script>
+<script src={% static 'js/materialize-index.min.js' %}></script>
+<script type="text/javascript" src={% static 'js/app-promos.js' %}></script>
+<script src={% static 'js/styleTienda.css' %}></script>
+
+
+<!-- COMIENZA FOOTER -->  
+  <footer class="page-footer  black"  id="myFooter" >
+
+   <div class="row">
+    <center>
+      <div class="col s12">¡SÍGUENOS EN NUESTRAS REDES SOCIALES!</div>
+      <div class="col s4"></div>
+
+      <div class="row">
+        <div class="col s3"></div>
+
+        <div class="col s12">
+          <center>
+            <br>
+            <br>
+            <span><a href="#arriba" title="Ir arriba"><img src={% static 'img/up.png' %} border="0" width="70" height="70"  href="#abajo" title="Ir arriba"></a></span>
+            <br>
+            <a href="https://www.instagram.com/millennialpetoriginal/" target=”_blank”><img src={% static 'img/icon8/instagram.png' %}/></a>
+            <a href="https://twitter.com/MillennialPet" target=”_blank”><img src={% static 'img/icon8/twitter.png' %}/></a>
+            <a href="https://www.youtube.com/channel/UClZJUBkm3fOpqYz1H1myjkQ" target=”_blank”><img src={% static 'img/icon8/youtube.png' %}/></a>
+            <a href="https://github.com/barcenitas/MillennialPet" target=”_blank”><img src={% static 'img/icon8/github-circle.png' %}/></a>
+            <a href="https://www.facebook.com/Millenial-Pet-127486044782676/" target=”_blank”><img src={% static 'img/icon8/facebook.png' %}/></a>
+
+          </center>
+        </div>
+        <div class="col s3"></div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col s3"></div>
+        <div class="col s3"><br>Todos los derechos reservados</div>
+        <div class="col s3"><br>Millennial Pet S.A de C.V</div>
+        <div class="col s3"></div>
+      </div>
+
+
+      <div class="footer-copyright">
+        <div class="col s12">
+          © 2018 Copyright 
+        </div>
+      </div>
+      <br>
+    </footer>
+<!-- TERMINA FOOTER -->
+</html>
